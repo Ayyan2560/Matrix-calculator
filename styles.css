@@ -98,3 +98,20 @@ button:active{
   background: rgba(30,41,59,.9);
   border-color:#22d3ee;
 }
+@media (max-width: 600px) {
+  h1, h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  input[type="number"] {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
