@@ -114,9 +114,7 @@ function Calculate_product(){
     arr_2[6]=document.getElementById("Matix_16").value
     arr_2[7]=document.getElementById("Matix_17").value
     arr_2[8]=document.getElementById("Matix_18").value
-
-
-
+    // ===== Calculation =====
     result[0] = arr_1[0]*arr_2[0] + arr_1[1]*arr_2[3] + arr_1[2]*arr_2[6]
     result[1] = arr_1[0]*arr_2[1] + arr_1[1]*arr_2[4] + arr_1[2]*arr_2[7]
     result[2] = arr_1[0]*arr_2[2] + arr_1[1]*arr_2[5] + arr_1[2]*arr_2[8]
@@ -128,16 +126,13 @@ function Calculate_product(){
     result[6] = arr_1[6]*arr_2[0] + arr_1[7]*arr_2[3] + arr_1[8]*arr_2[6]
     result[7] = arr_1[6]*arr_2[1] + arr_1[7]*arr_2[4] + arr_1[8]*arr_2[7]
     result[8] = arr_1[6]*arr_2[2] + arr_1[7]*arr_2[5] + arr_1[8]*arr_2[8]
-console.log(arr_1)
-console.log(arr_2)
-console.log(result)
 
-    // ===== Output =====
-    document.getElementById("Matix_19").value = result[0]
+
+     document.getElementById("Matix_19").value = result[0]
     document.getElementById("Matix_20").value = result[1]
     document.getElementById("Matix_21").value = result[2]
     document.getElementById("Matix_22").value = result[3]
-    document.getElementById("Matix_23").value = result[4]
+    document.getElementById("Matix_33").value = result[4]
     document.getElementById("Matix_24").value = result[5]
     document.getElementById("Matix_25").value = result[6]
     document.getElementById("Matix_26").value = result[7]

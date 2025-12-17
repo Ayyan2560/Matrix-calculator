@@ -1,41 +1,100 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
 }
+
 body{
-    padding: 1em;
-    display:flex;
-  justify-content: center;
-  align-items: center;
- flex-direction: column;
- gap: 1em;
-
+  min-height:100vh;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  gap:1.5rem;
+  color:#e5e7eb;
 }
-input[type="text"]
-{
-    width: 2em;
-    height: 2em;
-    text-align: center;
 
+h1{
+  letter-spacing:2px;
+  font-weight:600;
+  background: linear-gradient(90deg,#38bdf8,#a78bfa);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
 }
+
+h4{
+  text-align:center;
+  margin-bottom:.5rem;
+  color:#c7d2fe;
+  font-weight:500;
+}
+
 .main{
-    display: flex;
-    gap: 2em;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border-radius:20px;
+  padding:2rem 2.5rem;
+  display:flex;
+  gap:3rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,.45);
 }
+
 .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:1rem;
 }
+
+input[type="text"]{
+  width:3.2rem;
+  height:3.2rem;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.15);
+  background: rgba(15,23,42,.8);
+  color:#fff;
+  text-align:center;
+  font-size:1rem;
+  outline:none;
+  transition:.25s ease;
+}
+
+input[type="text"]:focus{
+  border-color:#38bdf8;
+  box-shadow:0 0 0 3px rgba(56,189,248,.35);
+}
+
 .button{
-    padding: 8px 16px;
-    display: flex;
-    gap: 1.5em;
+  display:flex;
+  gap:1.5rem;
 }
+
 button{
-    padding: 4px 8px;
-    width: 150px;
-    cursor: pointer;
+  width:160px;
+  padding:.75rem 1rem;
+  border-radius:999px;
+  border:none;
+  cursor:pointer;
+  font-size:.95rem;
+  font-weight:500;
+  color:#020617;
+  background: linear-gradient(135deg,#38bdf8,#a78bfa);
+  box-shadow:0 12px 25px rgba(56,189,248,.4);
+  transition:.25s ease;
+}
+
+button:hover{
+  transform: translateY(-2px) scale(1.03);
+  box-shadow:0 18px 35px rgba(167,139,250,.5);
+}
+
+button:active{
+  transform: scale(.97);
+}
+
+/* Result Matrix highlight */
+.container:last-of-type input{
+  background: rgba(30,41,59,.9);
+  border-color:#22d3ee;
 }
